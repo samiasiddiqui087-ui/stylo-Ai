@@ -1,0 +1,1215 @@
+# PROJECT: IMMERSO – COMPLETE AI PERSONAL STYLIST, VIRTUAL WARDROBE & SMART FASHION SHOPPING PLATFORM
+
+## ROLE & OBJECTIVE
+
+Act as a senior full-stack developer, UI/UX designer, AI engineer, e-commerce architect, database engineer, and fashion technology specialist.
+
+Build a complete, production-ready, premium AI-powered fashion platform named IMMERSO.
+
+Brand Name: IMMERSO
+
+Tagline: Smart Shopping. Sharp Styling. Virtually Yours.
+
+The platform must combine:
+
+1. Luxury fashion shopping.
+2. AI personal stylist.
+3. Intelligent AI shopping chatbot.
+4. AI voice shopping.
+5. Digital virtual wardrobe.
+6. AI outfit generator.
+7. Virtual outfit try-on.
+8. Smart outfit planner.
+9. Product recommendations.
+10. Shopping cart and checkout.
+11. Direct WhatsApp order placement.
+12. Order tracking.
+13. Complete admin dashboard.
+
+IMPORTANT:
+Do not create only a landing page, static prototype, or documentation.
+
+Build the actual working application, including frontend, backend, database, AI integrations, authentication, shopping functionality, and responsive design.
+
+Use the uploaded IMMERSO reference screenshot as the primary visual inspiration.
+
+Preserve its luxurious fashion atmosphere, realistic female model, elegant walk-in wardrobe, warm lighting, floating transparent panels, and premium glassmorphism interface.
+
+If an existing project is provided, inspect its architecture and preserve working code.
+
+# 1. BRAND IDENTITY & PREMIUM DESIGN
+
+Create an ultra-premium luxury fashion technology experience.
+
+COLOR PALETTE:
+- Champagne Beige.
+- Warm Ivory.
+- Cream White.
+- Soft Taupe.
+- Elegant Brown.
+- Subtle Gold.
+- Warm Neutral Gray.
+
+DESIGN STYLE:
+- Luxury fashion editorial.
+- Minimalist boutique aesthetics.
+- Cinematic fashion photography.
+- Realistic 3D fashion models.
+- Premium typography.
+- Frosted glass floating panels.
+- Soft shadows.
+- Elegant rounded corners.
+- Smooth 3D animations.
+- Subtle parallax effects.
+- Beautiful product imagery.
+- Sophisticated transitions.
+
+Avoid excessive gradients, bright colors, cheap-looking components, and cluttered layouts.
+
+The design should feel like a combination of a luxury fashion boutique and an advanced AI styling studio.
+
+# 2. HOMEPAGE & HERO SECTION
+
+Create an impressive cinematic homepage.
+
+HERO VISUAL:
+
+Display a realistic, elegant female fashion model standing inside a luxurious modern walk-in wardrobe.
+
+Add realistic lighting, clothing racks, premium furniture, and a warm beige environment.
+
+Place two interactive floating glassmorphism panels around the model.
+
+LEFT PANEL – AI PERSONAL STYLIST:
+
+- IMMERSO logo.
+- Personalized greeting.
+- User profile image.
+- Weather information.
+- Today's fashion recommendation.
+- Outfit thumbnail.
+- Styling description.
+- Quick AI chat button.
+
+RIGHT PANEL – OUTFIT PLANNER:
+
+- Interactive calendar.
+- Date navigation.
+- Today's scheduled outfit.
+- Clothing thumbnails.
+- Accessories suggestions.
+- Occasion information.
+- Outfit scheduling controls.
+
+HERO HEADING:
+
+"Your Style. Reimagined."
+
+SUBTITLE:
+
+"Meet your personal AI stylist. Discover outfits, organize your wardrobe, and shop smarter with personalized fashion intelligence."
+
+PRIMARY BUTTON:
+"Discover Your Style"
+
+SECONDARY BUTTON:
+"Explore My Wardrobe"
+
+Add elegant animations and responsive layouts.
+
+# 3. NAVIGATION BAR
+
+Create a premium sticky navigation bar.
+
+Navigation items:
+
+- IMMERSO Logo.
+- Home.
+- Shop.
+- Collections.
+- AI Stylist.
+- My Wardrobe.
+- Outfit Planner.
+- AI Outfit Generator.
+- Style Inspiration.
+- About Us.
+- Contact.
+- Search.
+- Wishlist.
+- Shopping Cart.
+- Login / Sign Up.
+- Profile.
+
+Implement a responsive hamburger menu for mobile.
+
+All navigation items must lead to functional pages.
+
+# 4. AI PERSONAL STYLIST
+
+Build an intelligent conversational AI personal stylist.
+
+Features:
+
+- Natural language conversations.
+- Personalized fashion recommendations.
+- Outfit color matching.
+- Occasion-based styling.
+- Casual outfits.
+- Formal outfits.
+- Office outfits.
+- Party outfits.
+- Wedding outfits.
+- Travel outfits.
+- Seasonal recommendations.
+- Budget-based styling.
+- Fashion preference learning.
+- Chat history.
+- Image upload for clothing analysis.
+
+Example greeting:
+
+"Hello! Welcome to IMMERSO. Let's create your perfect look today."
+
+Example questions:
+
+- What should I wear today?
+- Suggest an outfit for a party.
+- Create an elegant office look.
+- Which colors match this dress?
+- Suggest outfits for winter.
+- Help me style my existing wardrobe.
+- Find an outfit under Rs. 5,000.
+
+Use a real Gemini API integration for AI responses.
+
+Keep API keys on the server side.
+
+The assistant must use actual product and wardrobe information whenever making product-specific recommendations.
+
+# 5. AI SHOPPING CHATBOT – CORE FEATURE
+
+Create an advanced AI shopping chatbot accessible from every page.
+
+CHATBOT NAME:
+IMMERSO AI Shopping Assistant.
+
+POSITION:
+Floating chat button at the bottom-right corner.
+
+DESIGN:
+- Premium floating chat window.
+- Elegant beige and ivory theme.
+- Glassmorphism interface.
+- Smooth opening and closing animations.
+- Product cards inside chat.
+- Typing indicators.
+- Chat history.
+- Quick suggestion buttons.
+- Mobile-friendly full-screen chat.
+
+WELCOME MESSAGE:
+
+"Hello! Welcome to IMMERSO. I'm your personal fashion stylist and shopping assistant. What would you like to discover today?"
+
+## 5A. PRODUCT SEARCH THROUGH CHAT
+
+Customers must be able to search the actual product catalog through natural language.
+
+Examples:
+
+- Show me black dresses.
+- Find a casual outfit.
+- Show me new arrivals.
+- I need a wedding outfit.
+- Show me handbags under Rs. 3,000.
+- Find elegant formal clothes.
+- Show me products in beige.
+- What is available in size M?
+
+Display actual matching products in chatbot cards.
+
+Every product card must include:
+
+- Product image.
+- Product name.
+- Price in PKR.
+- Available colors.
+- Available sizes.
+- Stock availability.
+- Product details.
+- Add to Cart.
+- Buy Now.
+
+## 5B. DIRECT SHOPPING THROUGH CHAT
+
+Allow customers to complete their shopping directly inside the chatbot.
+
+The chatbot must support:
+
+1. Search products.
+2. View product details.
+3. Select size.
+4. Select color.
+5. Select quantity.
+6. Add products to cart.
+7. Remove products.
+8. Update quantities.
+9. View cart.
+10. Calculate totals.
+11. Proceed to checkout.
+
+The chatbot must use the same shopping cart and product database as the main website.
+
+If the customer adds a product through the chatbot, it must also appear in the normal website cart.
+
+Do not create a separate disconnected chatbot cart.
+
+## 5C. INTELLIGENT PRODUCT RECOMMENDATIONS
+
+Recommend products based on:
+
+- Budget.
+- Occasion.
+- Preferred colors.
+- Clothing preferences.
+- User shopping history.
+- Selected sizes.
+- Fashion aesthetic.
+- Available inventory.
+
+## 5D. CHATBOT PURCHASE FLOW
+
+When a customer says:
+
+"I want to buy this."
+
+The chatbot must:
+
+1. Identify the selected product.
+2. Confirm its availability.
+3. Ask for size.
+4. Ask for color.
+5. Ask for quantity.
+6. Add it to the cart.
+7. Show the order summary.
+8. Provide checkout access.
+
+Never invent products, prices, discounts, or stock availability.
+
+# 6. AI VOICE SHOPPING
+
+Add voice shopping functionality.
+
+Features:
+
+- Microphone button inside chatbot.
+- Voice-to-text input.
+- Spoken product search.
+- Voice-based fashion questions.
+- Optional text-to-speech responses.
+- Start and stop listening controls.
+- Microphone permission handling.
+- Clear listening indicators.
+- Text input fallback.
+
+Example:
+
+Customer says:
+
+"Show me a beautiful black party dress under five thousand rupees."
+
+The assistant should understand the request and show matching available products.
+
+Support English and Urdu where the selected speech recognition and AI services support them.
+
+Do not keep the microphone active without user permission.
+
+# 7. VIRTUAL WARDROBE
+
+Build a complete digital wardrobe.
+
+Features:
+
+- Upload clothing photos.
+- Add clothing manually.
+- Edit clothing details.
+- Delete wardrobe items.
+- Categorize tops.
+- Categorize bottoms.
+- Dresses.
+- Shoes.
+- Bags.
+- Accessories.
+- Jewellery.
+- Add brand.
+- Add color.
+- Add season.
+- Add clothing size.
+- Search and filter.
+- Create outfit combinations.
+- Save favorite looks.
+- Organize collections.
+
+Allow each authenticated customer to maintain a private wardrobe.
+
+Users must only access their own private wardrobe data.
+
+# 8. AI OUTFIT GENERATOR
+
+Create an AI-powered outfit generator.
+
+USER INPUTS:
+
+- Gender or preferred fashion category.
+- Occasion.
+- Weather.
+- Budget.
+- Preferred colors.
+- Clothing type.
+- Fashion aesthetic.
+- Season.
+
+Generate complete outfit combinations.
+
+Each recommendation must contain:
+
+- Clothing images.
+- Product names.
+- Matching accessories.
+- Shoes.
+- Color palette.
+- Styling explanation.
+- Total estimated price.
+- Product availability.
+- Add All to Cart.
+
+Allow customers to save and share generated outfits.
+
+Whenever possible, generate recommendations using actual products from the IMMERSO catalog.
+
+# 9. AI VIRTUAL TRY-ON
+
+Add an optional AI virtual try-on experience.
+
+Features:
+
+- Upload a customer photo.
+- Select a fashion product.
+- Preview an outfit using an AI image-generation or virtual try-on service.
+- Compare original and generated previews.
+- Save generated looks.
+- Share results.
+
+IMPORTANT:
+
+Use a real image-generation or virtual try-on integration.
+
+Do not pretend a static product image is a real virtual try-on.
+
+Explain that generated previews are illustrative and may not accurately represent actual garment fit.
+
+Protect uploaded personal photos and allow users to delete them.
+
+# 10. SMART SHOPPING & E-COMMERCE
+
+Build a complete fashion shopping store.
+
+PRODUCT CATEGORIES:
+
+- Women's Clothing.
+- Men's Clothing.
+- Dresses.
+- Casual Wear.
+- Formal Wear.
+- Party Wear.
+- Luxury Collections.
+- Shoes.
+- Handbags.
+- Accessories.
+- Jewellery.
+- New Arrivals.
+- Best Sellers.
+- Seasonal Collections.
+
+PRODUCT INFORMATION:
+
+- Product name.
+- SKU.
+- Description.
+- Multiple product images.
+- Price in PKR.
+- Original price.
+- Available sizes.
+- Available colors.
+- Stock quantity.
+- Category.
+- Brand.
+- Product details.
+- Related products.
+
+FUNCTIONAL FEATURES:
+
+- Product search.
+- Advanced filtering.
+- Price sorting.
+- Category filtering.
+- Brand filtering.
+- Size filtering.
+- Color filtering.
+- Wishlist.
+- Product comparison.
+- Product details.
+- Related products.
+- Recently viewed items.
+
+Only display products and prices configured in the real database.
+
+# 11. SHOPPING CART
+
+Build a complete functional shopping cart.
+
+Features:
+
+- Add to Cart.
+- Remove from Cart.
+- Update quantity.
+- Change size.
+- Change color.
+- Product thumbnails.
+- Individual prices.
+- Subtotal.
+- Delivery charges.
+- Discount codes.
+- Final total.
+- Continue Shopping.
+- Checkout.
+
+Synchronize the cart between the main website and AI chatbot.
+
+Preserve guest carts and authenticated customer carts.
+
+Validate stock before checkout and prevent purchasing unavailable quantities.
+
+# 12. DIRECT WHATSAPP ORDER PLACEMENT
+
+THIS IS ONE OF THE MOST IMPORTANT FEATURES.
+
+Business WhatsApp Number:
+
+03112537554
+
+International Format:
+
++923112537554
+
+Official WhatsApp destination:
+
+https://wa.me/923112537554
+
+Every customer must be able to place an order directly through WhatsApp from the website.
+
+## 12A. CHECKOUT FORM
+
+Create a professional checkout form.
+
+Required fields:
+
+1. Full Name.
+2. WhatsApp / Mobile Number.
+3. Complete Delivery Address.
+4. City.
+5. Product Selection.
+6. Product Size.
+7. Product Color.
+8. Quantity.
+
+Optional fields:
+
+- Email Address.
+- Postal Code.
+- Additional Order Notes.
+
+Validate all required fields.
+
+## 12B. ORDER SUMMARY
+
+Before checkout, display:
+
+- Customer details.
+- Product images.
+- Product names.
+- Selected sizes.
+- Selected colors.
+- Quantities.
+- Individual prices.
+- Subtotal.
+- Delivery charges.
+- Discount.
+- Final total.
+- Order reference number.
+
+Allow the customer to review and confirm the details.
+
+## 12C. WHATSAPP ORDER MESSAGE
+
+After the customer clicks:
+
+"PLACE ORDER ON WHATSAPP"
+
+The application must:
+
+1. Validate the checkout form.
+2. Verify product availability.
+3. Generate a unique order reference.
+4. Save the order in the database.
+5. Set the initial status to "Pending WhatsApp Confirmation".
+6. Generate a complete order summary.
+7. Format the summary into a readable WhatsApp message.
+8. Encode the message using encodeURIComponent().
+9. Open the official WhatsApp link.
+
+Use:
+
+https://wa.me/923112537554?text=ENCODED_ORDER_MESSAGE
+
+MESSAGE FORMAT:
+
+Hello IMMERSO! I would like to place an order.
+
+Order ID: [ORDER_ID]
+
+Customer Name: [CUSTOMER_NAME]
+
+Customer Phone: [CUSTOMER_PHONE]
+
+Delivery Address: [DELIVERY_ADDRESS]
+
+Order Items:
+
+[PRODUCT_NAME]
+Size: [SIZE]
+Color: [COLOR]
+Quantity: [QUANTITY]
+Price: [PRICE]
+
+Subtotal: Rs. [SUBTOTAL]
+
+Delivery Charges: Rs. [DELIVERY]
+
+Total: Rs. [TOTAL]
+
+Additional Notes: [NOTES]
+
+Please confirm my order. Thank you!
+
+## 12D. WHATSAPP CONFIRMATION
+
+After opening WhatsApp, display:
+
+"Your order message is ready! Please press SEND in WhatsApp to submit your order to IMMERSO."
+
+IMPORTANT:
+
+Opening WhatsApp does not mean the order has been sent.
+
+Do not mark an order as confirmed or received merely because the WhatsApp window opened.
+
+Keep the order status pending until the business owner verifies the order.
+
+Provide a fallback option if WhatsApp is not installed or cannot open.
+
+Do not silently discard an order if the customer closes WhatsApp.
+
+# 13. WHATSAPP ADMIN NOTIFICATIONS
+
+Add optional automatic WhatsApp notifications through the official Meta WhatsApp Cloud API.
+
+When a new order is submitted:
+
+- Notify the business owner.
+- Include the order reference.
+- Include customer details.
+- Include ordered products.
+- Include order total.
+- Include a link to the admin order record.
+
+Business notification number:
+
++923112537554
+
+Use secure backend environment variables:
+
+WHATSAPP_ACCESS_TOKEN=
+WHATSAPP_PHONE_NUMBER_ID=
+WHATSAPP_BUSINESS_ACCOUNT_ID=
+
+Never expose these credentials in frontend code.
+
+Use approved message templates where required by Meta.
+
+If WhatsApp Cloud API is not configured, the normal wa.me customer ordering system must continue working.
+
+# 14. ORDER TRACKING
+
+Create a dedicated order tracking page.
+
+Customers can track orders using:
+
+- Order ID.
+- Verified phone number or authenticated account.
+
+Display order statuses:
+
+1. Pending WhatsApp Confirmation.
+2. Confirmed.
+3. Processing.
+4. Packed.
+5. Shipped.
+6. Out for Delivery.
+7. Delivered.
+8. Cancelled.
+
+Display:
+
+- Order ID.
+- Order date.
+- Products.
+- Total amount.
+- Delivery address.
+- Current status.
+- Status timeline.
+
+Only authorized administrators can change order statuses.
+
+Do not expose other customers' order information.
+
+# 15. AI SMART PRODUCT RECOMMENDATIONS
+
+Build a recommendation engine.
+
+Recommend products based on:
+
+- User preferences.
+- Previous purchases.
+- Browsing history.
+- Wishlist.
+- Favorite colors.
+- Budget.
+- Occasion.
+- Available stock.
+
+Add sections:
+
+- Recommended For You.
+- You May Also Like.
+- Complete Your Look.
+- Trending Collections.
+- Recently Viewed.
+
+Recommendations should be based on actual product information.
+
+# 16. STYLE INSPIRATION
+
+Build a beautiful fashion inspiration gallery.
+
+Categories:
+
+- Minimalist Fashion.
+- Old Money Aesthetic.
+- Streetwear.
+- Luxury Fashion.
+- Casual Chic.
+- Office Fashion.
+- Party Wear.
+- Seasonal Trends.
+- Wedding Fashion.
+
+Features:
+
+- Visual inspiration cards.
+- Save favorites.
+- Share looks.
+- Related products.
+- Shop This Look.
+- AI styling suggestions.
+
+# 17. AI OUTFIT PLANNER
+
+Create an interactive calendar.
+
+Features:
+
+- Monthly calendar.
+- Weekly calendar.
+- Daily outfit scheduling.
+- Event-based styling.
+- Weather-aware recommendations.
+- Save outfits.
+- Edit outfits.
+- Delete schedules.
+- Outfit reminders.
+
+Example:
+
+Monday – Office Chic.
+Tuesday – Casual Minimal.
+Wednesday – Modern Classic.
+Thursday – Elegant Evening.
+
+Allow users to select dates and assign outfits.
+
+# 18. WEATHER INTEGRATION
+
+Add optional real weather integration.
+
+Features:
+
+- Current temperature.
+- Weather conditions.
+- Daily forecast.
+- Weather-based clothing recommendations.
+- Rain-aware outfit suggestions.
+- Seasonal styling.
+
+Use a real weather API.
+
+Request location permission only when necessary.
+
+Provide manual city selection as an alternative.
+
+Do not display fabricated live weather information.
+
+# 19. USER AUTHENTICATION
+
+Implement:
+
+- Sign Up.
+- Login.
+- Logout.
+- Forgot Password.
+- Password Reset.
+- Profile Image.
+- Customer Profile.
+- Personal Preferences.
+- Saved Outfits.
+- Digital Wardrobe.
+- Wishlist.
+- Order History.
+- Saved Addresses.
+
+Support secure guest checkout.
+
+Protect all private user information.
+
+# 20. USER DASHBOARD
+
+Create a personalized dashboard.
+
+Display:
+
+- Welcome message.
+- Today's outfit.
+- AI stylist assistant.
+- Weather information.
+- Wardrobe overview.
+- Upcoming outfit schedule.
+- Favorite outfits.
+- Recent recommendations.
+- Shopping suggestions.
+- Recent orders.
+- Order tracking.
+
+Use a clean premium dashboard layout.
+
+# 21. ADMIN DASHBOARD
+
+Create a secure administrator dashboard.
+
+ADMIN FEATURES:
+
+PRODUCT MANAGEMENT:
+- Add products.
+- Edit products.
+- Delete products.
+- Upload images.
+- Manage prices.
+- Manage sizes.
+- Manage colors.
+- Manage inventory.
+- Manage categories.
+
+ORDER MANAGEMENT:
+- View all orders.
+- View customer details.
+- View order items.
+- Confirm orders.
+- Update order status.
+- Manage cancellations.
+- Manage delivery charges.
+- Search orders.
+- Filter orders.
+
+CUSTOMER MANAGEMENT:
+- View customers.
+- Manage customer accounts.
+- View purchase history.
+- View customer inquiries.
+
+CHATBOT MANAGEMENT:
+- Manage AI settings.
+- Manage chatbot welcome message.
+- Configure Gemini API.
+- Review chatbot usage.
+- Manage product recommendations.
+
+BUSINESS MANAGEMENT:
+- Sales analytics.
+- Total orders.
+- Pending orders.
+- Completed orders.
+- Revenue reports.
+- Product performance.
+- Inventory reports.
+
+WEBSITE MANAGEMENT:
+- Homepage content.
+- Banners.
+- Fashion collections.
+- Discount codes.
+- Subscription plans.
+- Contact information.
+- Policies.
+
+SECURITY:
+- Only authorized administrators can access admin routes.
+- Implement role-based access control.
+- Never grant administrator privileges based only on a frontend setting.
+
+# 22. SUBSCRIPTIONS & MONETIZATION
+
+Create configurable Free and Premium membership plans.
+
+FREE:
+- Limited AI stylist requests.
+- Basic wardrobe.
+- Basic outfit planner.
+- Basic product recommendations.
+
+PREMIUM:
+- Advanced AI styling.
+- Higher AI usage limits.
+- Advanced outfit generation.
+- Virtual try-on credits.
+- Personalized recommendations.
+- Exclusive styling features.
+
+Allow the administrator to configure pricing, plans, and usage limits.
+
+Integrate a real payment gateway only after credentials and merchant configuration are available.
+
+Never pretend a payment has been completed without payment verification.
+
+# 23. CONTACT & CUSTOMER SUPPORT
+
+Create:
+
+- Contact page.
+- Customer support form.
+- WhatsApp contact button.
+- FAQ page.
+- Privacy Policy.
+- Terms and Conditions.
+- Shipping Policy.
+- Return and Refund Policy.
+
+Use the business WhatsApp number:
+
++923112537554
+
+All customer support links must work.
+
+# 24. FOOTER
+
+Create a luxury footer containing:
+
+- IMMERSO logo.
+- Brand description.
+- Shop.
+- Collections.
+- AI Stylist.
+- Customer Support.
+- Contact.
+- WhatsApp.
+- Privacy Policy.
+- Terms and Conditions.
+- Shipping Policy.
+- Return Policy.
+- Instagram.
+- Facebook.
+- Pinterest.
+
+# 25. TECHNICAL ARCHITECTURE
+
+Preferred technology stack:
+
+FRONTEND:
+- Next.js or existing React framework.
+- TypeScript.
+- Tailwind CSS.
+- Framer Motion.
+- Responsive component architecture.
+
+BACKEND:
+- Next.js server APIs or Node.js backend.
+- Secure server-side business logic.
+- Input validation.
+- Authentication and authorization.
+
+DATABASE:
+- PostgreSQL or Supabase.
+- Proper relational database structure.
+- Customer records.
+- Products.
+- Categories.
+- Inventory.
+- Orders.
+- Order items.
+- Wardrobe items.
+- Saved outfits.
+- Wishlist.
+- Subscriptions.
+- Chat history.
+
+AI:
+- Gemini API for conversational fashion assistance.
+- Structured product search tools.
+- AI outfit recommendations.
+- Optional image generation integration.
+- Optional speech recognition and text-to-speech.
+
+STORAGE:
+- Secure cloud image storage.
+- Product images.
+- Customer wardrobe images.
+- Generated outfit previews.
+
+PAYMENTS:
+- Configurable payment integration.
+
+WHATSAPP:
+- wa.me customer ordering.
+- Optional Meta WhatsApp Cloud API notifications.
+
+If the existing project uses a different working technology stack, preserve it unless a specific technical problem requires a change.
+
+# 26. DATABASE & DATA SECURITY
+
+Create a proper database schema for:
+
+- Users.
+- Admins and roles.
+- Products.
+- Product variants.
+- Categories.
+- Inventory.
+- Cart.
+- Cart items.
+- Orders.
+- Order items.
+- Addresses.
+- Wishlist.
+- Wardrobe items.
+- Outfit combinations.
+- Outfit schedules.
+- Chat sessions.
+- Chat messages.
+- Subscriptions.
+- Notifications.
+
+Implement:
+
+- Server-side validation.
+- Secure authentication.
+- Role-based permissions.
+- Database access controls.
+- Secure image uploads.
+- Input sanitization.
+- Rate limiting.
+- API protection.
+- Environment variable protection.
+- Privacy controls.
+
+Never store passwords in plain text.
+
+Do not expose API keys or secret tokens in frontend JavaScript.
+
+# 27. ANIMATIONS & USER EXPERIENCE
+
+Implement:
+
+- Smooth page transitions.
+- Cinematic hero animations.
+- Floating glass panels.
+- Subtle 3D model effects.
+- Product card animations.
+- Elegant hover effects.
+- Scroll-triggered animations.
+- Animated chatbot interface.
+- Smooth modal transitions.
+- Wardrobe interactions.
+- Loading skeletons.
+- Success and error notifications.
+
+Animations must be lightweight and optimized.
+
+# 28. RESPONSIVE DESIGN
+
+Ensure complete responsiveness across:
+
+- Windows desktop.
+- Windows laptops.
+- Android phones.
+- iPhones.
+- Tablets.
+
+Special attention:
+
+- Mobile shopping cart.
+- Mobile chatbot.
+- Checkout form.
+- Product galleries.
+- Navigation.
+- Order tracking.
+- User dashboard.
+
+Every feature must remain usable on mobile.
+
+# 29. SEO & PERFORMANCE
+
+Implement:
+
+- SEO-friendly page titles.
+- Meta descriptions.
+- Open Graph tags.
+- Semantic HTML.
+- Sitemap.
+- Robots.txt.
+- Structured product data.
+- Image optimization.
+- Lazy loading.
+- Fast rendering.
+- Accessible components.
+- Error boundaries.
+- Proper loading states.
+- Empty states.
+
+# 30. STRICT DEVELOPMENT RULES
+
+Follow these rules throughout development.
+
+BEFORE CODING:
+
+1. Inspect all existing project files.
+2. Understand the current project architecture.
+3. Identify existing components and integrations.
+4. Check existing environment variables.
+5. Identify errors and missing features.
+6. Create a clear implementation sequence internally.
+
+DURING DEVELOPMENT:
+
+1. Write actual application code.
+2. Do not create documentation instead of implementation.
+3. Do not delete working files unnecessarily.
+4. Preserve existing working features.
+5. Complete all major pages.
+6. Connect frontend and backend.
+7. Connect the real database.
+8. Integrate the actual Gemini API.
+9. Connect the chatbot to the real product catalog.
+10. Synchronize chatbot shopping with the main cart.
+11. Implement actual checkout functionality.
+12. Implement WhatsApp order message generation.
+13. Implement order tracking.
+14. Implement secure admin management.
+15. Make all essential buttons functional.
+16. Never use fake data to pretend a real integration works.
+17. Use environment variables for all secret credentials.
+18. Handle errors properly.
+
+AFTER DEVELOPMENT:
+
+Run and verify the actual application.
+
+Test these workflows:
+
+- Homepage loads correctly.
+- Navigation works.
+- Signup and login work.
+- AI stylist responds.
+- AI chatbot searches actual products.
+- Product details display correctly.
+- Product sizes and colors can be selected.
+- Voice shopping works when permissions and services are available.
+- Add to Cart works.
+- Cart synchronization works.
+- Checkout form validation works.
+- Order reference is generated.
+- WhatsApp order message is correctly formatted.
+- WhatsApp destination is +923112537554.
+- Order is saved with the correct pending status.
+- Order tracking works.
+- Admin can manage products.
+- Admin can manage orders.
+- Mobile layout works.
+- No critical TypeScript errors.
+- No critical runtime errors.
+
+Do not claim that an external service is configured unless it has actually been tested.
+
+If an integration needs credentials, implement its configuration and clearly identify the missing environment variables.
+
+# 31. FINAL DELIVERY REQUIREMENTS
+
+Deliver a complete working IMMERSO platform, not merely a design.
+
+The final application must include:
+
+1. Premium luxury homepage.
+2. Functional navigation.
+3. AI personal stylist.
+4. AI shopping chatbot.
+5. AI voice shopping.
+6. Virtual wardrobe.
+7. AI outfit generator.
+8. AI virtual try-on.
+9. Smart shopping store.
+10. Product catalog.
+11. Shopping cart.
+12. Checkout.
+13. Direct WhatsApp ordering.
+14. WhatsApp admin notifications integration.
+15. Order tracking.
+16. User authentication.
+17. User dashboard.
+18. Secure admin dashboard.
+19. Weather integration.
+20. Subscription architecture.
+21. Responsive mobile experience.
+22. SEO and performance optimization.
+
+FINAL QUALITY STANDARD:
+
+IMMERSO must look like a premium international fashion technology brand.
+
+The experience must be elegant, intelligent, fast, secure, and genuinely functional.
+
+Customers must be able to discover products, communicate with the AI stylist, shop through the chatbot, complete checkout, and send their order directly to the business WhatsApp number.
+
+The business owner must be able to manage products, customers, orders, inventory, and website content through the admin dashboard.
+
+Do not stop at the homepage.
+
+Do not stop at a visual prototype.
+
+Build, run, test, debug, and complete the actual application.

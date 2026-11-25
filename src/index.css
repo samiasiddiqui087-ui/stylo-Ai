@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-ivory: #FDFBF7;
+    --bg-champagne: #F7F3EC;
+    --bg-taupe: #E5DDD0;
+    --text-espresso: #2A231E;
+    --text-muted: #70685E;
+    --accent-gold: #B5945B;
+  }
+
+  html,
+  body {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', 'Noto Naskh Arabic', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #FDFBF7;
+    color: #2A231E;
+    overflow-x: clip;
+    max-width: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  img,
+  video,
+  canvas,
+  svg {
+    max-width: 100%;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: 'Cormorant Garamond', 'Noto Naskh Arabic', Georgia, serif;
+  }
+
+  .font-mono-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.glass-panel {
+  background: rgba(253, 251, 247, 0.78);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(229, 221, 208, 0.85);
+}
+
+.glass-panel-dark {
+  background: rgba(42, 35, 30, 0.78);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(229, 221, 208, 0.2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,325 @@
+{
+  "entities": {
+    "Product": {
+      "title": "Product",
+      "description": "IMMERSO luxury fashion catalog product",
+      "type": "object",
+      "properties": {
+        "sku": { "type": "string", "minLength": 2, "maxLength": 40, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "name": { "type": "string", "minLength": 2, "maxLength": 140 },
+        "description": { "type": "string", "minLength": 10, "maxLength": 2000 },
+        "category": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "brand": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "pricePkr": { "type": "number" },
+        "originalPricePkr": { "type": "number" },
+        "stock": { "type": "integer" },
+        "images": { "type": "array" },
+        "sizes": { "type": "array" },
+        "colors": { "type": "array" },
+        "occasion": { "type": "string", "maxLength": 60 },
+        "season": { "type": "string", "maxLength": 60 },
+        "details": { "type": "string", "maxLength": 1500 },
+        "isFeatured": { "type": "boolean" },
+        "isNewArrival": { "type": "boolean" },
+        "isBestSeller": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["sku", "name", "description", "category", "brand", "pricePkr", "stock", "images", "sizes", "colors", "isFeatured", "isNewArrival", "isBestSeller", "createdAt", "updatedAt"]
+    },
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Private customer profile, preferences, and membership state",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "minLength": 4, "maxLength": 128 },
+        "displayName": { "type": "string", "maxLength": 120 },
+        "email": { "type": "string", "maxLength": 180 },
+        "photoUrl": { "type": "string", "maxLength": 500 },
+        "phone": { "type": "string", "maxLength": 30 },
+        "city": { "type": "string", "maxLength": 80 },
+        "address": { "type": "string", "maxLength": 300 },
+        "preferredColors": { "type": "array" },
+        "preferredStyle": { "type": "string", "maxLength": 80 },
+        "preferredSize": { "type": "string", "maxLength": 20 },
+        "role": { "type": "string", "enum": ["customer", "admin"] },
+        "plan": { "type": "string", "enum": ["free", "premium"] },
+        "aiRequestsUsed": { "type": "integer" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "displayName", "email", "role", "plan", "aiRequestsUsed", "createdAt", "updatedAt"]
+    },
+    "WardrobeItem": {
+      "title": "WardrobeItem",
+      "description": "Private digital wardrobe garment belonging to a customer",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "category": { "type": "string", "enum": ["Tops", "Bottoms", "Dresses", "Outerwear", "Shoes", "Bags", "Accessories", "Jewellery"] },
+        "brand": { "type": "string", "maxLength": 80 },
+        "color": { "type": "string", "maxLength": 50 },
+        "season": { "type": "string", "maxLength": 40 },
+        "size": { "type": "string", "maxLength": 20 },
+        "collectionName": { "type": "string", "maxLength": 80 },
+        "imageUrl": { "type": "string", "maxLength": 500000 },
+        "isFavorite": { "type": "boolean" },
+        "notes": { "type": "string", "maxLength": 400 },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "name", "category", "color", "season", "size", "isFavorite", "createdAt"]
+    },
+    "SavedOutfit": {
+      "title": "SavedOutfit",
+      "description": "Customer saved or AI-generated outfit combination",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "maxLength": 128 },
+        "title": { "type": "string", "minLength": 1, "maxLength": 140 },
+        "occasion": { "type": "string", "maxLength": 80 },
+        "season": { "type": "string", "maxLength": 60 },
+        "aesthetic": { "type": "string", "maxLength": 80 },
+        "stylingExplanation": { "type": "string", "maxLength": 1500 },
+        "colorPalette": { "type": "array" },
+        "productIds": { "type": "array" },
+        "totalEstimatedPkr": { "type": "number" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "title", "occasion", "stylingExplanation", "productIds", "totalEstimatedPkr", "createdAt"]
+    },
+    "OutfitSchedule": {
+      "title": "OutfitSchedule",
+      "description": "Scheduled daily outfit on the customer calendar",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "maxLength": 128 },
+        "date": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$", "maxLength": 10 },
+        "title": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "occasion": { "type": "string", "maxLength": 80 },
+        "accessoriesNote": { "type": "string", "maxLength": 300 },
+        "weatherNote": { "type": "string", "maxLength": 200 },
+        "productIds": { "type": "array" },
+        "reminderEnabled": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "date", "title", "occasion", "productIds", "reminderEnabled", "createdAt"]
+    },
+    "WishlistItem": {
+      "title": "WishlistItem",
+      "description": "Saved wishlist product",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "maxLength": 128 },
+        "productId": { "type": "string", "maxLength": 128 },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "productId", "createdAt"]
+    },
+    "CartItem": {
+      "title": "CartItem",
+      "description": "Synchronized shopping cart item shared between storefront and AI chatbot",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "maxLength": 128 },
+        "productId": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 140 },
+        "pricePkr": { "type": "number" },
+        "image": { "type": "string", "maxLength": 500 },
+        "size": { "type": "string", "maxLength": 20 },
+        "color": { "type": "string", "maxLength": 40 },
+        "quantity": { "type": "integer" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "productId", "name", "pricePkr", "image", "size", "color", "quantity", "updatedAt"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "Customer order placed via WhatsApp or checkout",
+      "type": "object",
+      "properties": {
+        "orderId": { "type": "string", "pattern": "^IMM-[A-Z0-9]{6,12}$", "maxLength": 20 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "customerName": { "type": "string", "minLength": 2, "maxLength": 120 },
+        "customerPhone": { "type": "string", "minLength": 7, "maxLength": 30 },
+        "customerEmail": { "type": "string", "maxLength": 180 },
+        "deliveryAddress": { "type": "string", "minLength": 5, "maxLength": 350 },
+        "city": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "postalCode": { "type": "string", "maxLength": 20 },
+        "notes": { "type": "string", "maxLength": 500 },
+        "discountCode": { "type": "string", "maxLength": 40 },
+        "items": { "type": "array" },
+        "subtotalPkr": { "type": "number" },
+        "deliveryChargePkr": { "type": "number" },
+        "discountPkr": { "type": "number" },
+        "totalPkr": { "type": "number" },
+        "status": {
+          "type": "string",
+          "enum": [
+            "Pending WhatsApp Confirmation",
+            "Confirmed",
+            "Processing",
+            "Packed",
+            "Shipped",
+            "Out for Delivery",
+            "Delivered",
+            "Cancelled"
+          ]
+        },
+        "whatsappMessage": { "type": "string", "maxLength": 4000 },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["orderId", "customerName", "customerPhone", "deliveryAddress", "city", "items", "subtotalPkr", "deliveryChargePkr", "discountPkr", "totalPkr", "status", "createdAt", "updatedAt"]
+    },
+    "OrderTracking": {
+      "title": "OrderTracking",
+      "description": "Non-PII public order tracking record indexed by Order ID",
+      "type": "object",
+      "properties": {
+        "orderId": { "type": "string", "maxLength": 20 },
+        "phoneLast4": { "type": "string", "maxLength": 4 },
+        "city": { "type": "string", "maxLength": 80 },
+        "itemCount": { "type": "integer" },
+        "itemSummary": { "type": "string", "maxLength": 500 },
+        "totalPkr": { "type": "number" },
+        "status": { "type": "string", "maxLength": 60 },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["orderId", "phoneLast4", "city", "itemCount", "itemSummary", "totalPkr", "status", "createdAt", "updatedAt"]
+    },
+    "SiteConfig": {
+      "title": "SiteConfig",
+      "description": "Admin-managed boutique settings, banners, discounts, and subscription plans",
+      "type": "object",
+      "properties": {
+        "heroTitle": { "type": "string", "maxLength": 140 },
+        "heroSubtitle": { "type": "string", "maxLength": 400 },
+        "chatbotWelcome": { "type": "string", "maxLength": 400 },
+        "defaultDeliveryChargePkr": { "type": "number" },
+        "freeShippingThresholdPkr": { "type": "number" },
+        "freePlanAiLimit": { "type": "integer" },
+        "premiumPlanPricePkr": { "type": "number" },
+        "premiumPlanAiLimit": { "type": "integer" },
+        "activeDiscountCode": { "type": "string", "maxLength": 40 },
+        "activeDiscountPercent": { "type": "number" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["heroTitle", "heroSubtitle", "chatbotWelcome", "defaultDeliveryChargePkr", "freeShippingThresholdPkr", "freePlanAiLimit", "premiumPlanPricePkr", "premiumPlanAiLimit", "updatedAt"]
+    },
+    "Inquiry": {
+      "title": "Inquiry",
+      "description": "Customer support inquiry submitted from Contact page",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "minLength": 2, "maxLength": 120 },
+        "email": { "type": "string", "minLength": 5, "maxLength": 180 },
+        "phone": { "type": "string", "maxLength": 30 },
+        "subject": { "type": "string", "minLength": 2, "maxLength": 160 },
+        "message": { "type": "string", "minLength": 5, "maxLength": 2000 },
+        "status": { "type": "string", "enum": ["New", "Replied", "Resolved"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "email", "subject", "message", "status", "createdAt"]
+    },
+    "ChatSession": {
+      "title": "ChatSession",
+      "description": "Saved AI stylist or shopping assistant conversation",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "maxLength": 128 },
+        "mode": { "type": "string", "enum": ["stylist", "shopping"] },
+        "messages": { "type": "array" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "mode", "messages", "updatedAt"]
+    },
+    "TryOnResult": {
+      "title": "TryOnResult",
+      "description": "User virtual try-on preview record",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "maxLength": 128 },
+        "productId": { "type": "string", "maxLength": 128 },
+        "productName": { "type": "string", "maxLength": 140 },
+        "previewDataUrl": { "type": "string", "maxLength": 850000 },
+        "disclaimer": { "type": "string", "maxLength": 300 },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "productId", "productName", "previewDataUrl", "disclaimer", "createdAt"]
+    },
+    "InspirationLook": {
+      "title": "InspirationLook",
+      "description": "Curated editorial look in Style Inspiration gallery",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "maxLength": 120 },
+        "category": { "type": "string", "maxLength": 80 },
+        "imageUrl": { "type": "string", "maxLength": 500 },
+        "stylingNote": { "type": "string", "maxLength": 600 },
+        "productIds": { "type": "array" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["title", "category", "imageUrl", "stylingNote", "productIds", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/products/{productId}": {
+      "schema": { "$ref": "#/entities/Product" },
+      "description": "Public boutique catalog products managed by admins"
+    },
+    "/orders/{orderId}": {
+      "schema": { "$ref": "#/entities/Order" },
+      "description": "Customer orders containing PII, readable only by order owner or admin"
+    },
+    "/orderTracking/{orderId}": {
+      "schema": { "$ref": "#/entities/OrderTracking" },
+      "description": "Non-PII order status lookup keyed by Order ID"
+    },
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/UserProfile" },
+      "description": "Private customer profile and style preferences"
+    },
+    "/users/{userId}/wardrobe/{itemId}": {
+      "schema": { "$ref": "#/entities/WardrobeItem" },
+      "description": "Private digital wardrobe items"
+    },
+    "/users/{userId}/savedOutfits/{outfitId}": {
+      "schema": { "$ref": "#/entities/SavedOutfit" },
+      "description": "Private saved and AI-generated outfits"
+    },
+    "/users/{userId}/schedules/{scheduleId}": {
+      "schema": { "$ref": "#/entities/OutfitSchedule" },
+      "description": "Private outfit planner calendar entries"
+    },
+    "/users/{userId}/wishlist/{itemId}": {
+      "schema": { "$ref": "#/entities/WishlistItem" },
+      "description": "Private customer wishlist"
+    },
+    "/users/{userId}/cart/{cartItemId}": {
+      "schema": { "$ref": "#/entities/CartItem" },
+      "description": "Synchronized customer shopping cart"
+    },
+    "/users/{userId}/chatSessions/{sessionId}": {
+      "schema": { "$ref": "#/entities/ChatSession" },
+      "description": "Private AI stylist and shopping assistant chat history"
+    },
+    "/users/{userId}/tryOnHistory/{tryOnId}": {
+      "schema": { "$ref": "#/entities/TryOnResult" },
+      "description": "Private virtual try-on previews"
+    },
+    "/siteConfig/{configId}": {
+      "schema": { "$ref": "#/entities/SiteConfig" },
+      "description": "Public boutique configuration managed by admins"
+    },
+    "/inquiries/{inquiryId}": {
+      "schema": { "$ref": "#/entities/Inquiry" },
+      "description": "Customer support inquiries"
+    },
+    "/inspirations/{lookId}": {
+      "schema": { "$ref": "#/entities/InspirationLook" },
+      "description": "Curated style inspiration looks"
+    }
+  }
+}

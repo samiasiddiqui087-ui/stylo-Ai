@@ -1,0 +1,6 @@
+{
+  "name": "IMMERSO — AI Personal Stylist & Luxury Fashion Platform",
+  "description": "Smart Shopping. Sharp Styling. Virtually Yours. Luxury fashion boutique, conversational AI stylist, voice shopping assistant, virtual wardrobe, outfit planner, and direct WhatsApp ordering.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
